@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fonts com Google</title>
+    <style>
+         @font-face {
+            font-family: "New Amsterdam";
+            src: url('font/NewAmsterdam-Regular.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+
+            /* 
+                Tipos de format()
+                - opentype (otf)
+                - truetype (ttf)
+                - embedded-opentype
+                - truetype-aap (Apple Advanced typography)
+                - svg
+                Podemos colocar 2 formatos no mesmo tempo usando , apos o outro
+                Na url é o nome do ficheiro
+            */
+        }
+        body {
+            font-family: Arial, Helvetica, sans-serif; 
+            font-size: 16px;
+            color: black;
+        }
+
+        h1 { /*
+            font-family: 'New Amsterdam';
+            font-size: 3em;
+            font-weight: normal;
+            font-style: normal; */
+            font: normal normal 3em  New Amsterdam
+        }
+    </style>
+</head>
+<body>
+    <h1>Título 1</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, explicabo? Impedit veniam eos eligendi debitis reiciendis incidunt, dolore atque neque ullam quibusdam, quasi provident quis mollitia, natus distinctio deserunt earum!</p>
+</body>
+</html>

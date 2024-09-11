@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            /*
+            Medidas Absolutas
+            cm, mm, in, px, pt, pc
+
+            Medidas Reltivas
+            em, ex, rem, vw, vh, %
+            16px geralmente = 1em
+            */ 
+            font-size: 1em;
+           
+        }
+
+        h1 {
+            /* propriedade shorthand font serve para agrupar essas configurções 
+
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bolder;
+            font-size: 3em;
+            font-style: italic;
+
+            em uma configuração seguindo a ordem começando por 
+            font-style -> font-weight -> font-size -> font-family 
+            */
+            font: italic bolder 3em Arial, Helvetica, sans-serif
+        }
+
+        h2 {
+            font: bold 2em Arial
+        }
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com fontes</h1>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia sit, dolor repellat est illo sint, consectetur magnam incidunt ad iure non facilis molestias reiciendis quaerat odit explicabo labore iste atque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit praesentium, ipsam fuga pariatur amet rerum voluptatem sed beatae quae repellendus obcaecati fugit minus voluptas animi ea, nemo sapiente dicta perspiciatis?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis sapiente quis minima obcaecati? Beatae nihil quas repellendus molestiae! Voluptas ipsum sapiente dolor. Natus nostrum voluptates rem eum quas in voluptatem?</p>
+    <h2>Subtítulo do exercício </h2>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem ex adipisci debitis nisi vero ullam inventore illo totam laborum et excepturi quia iure animi nostrum porro beatae, laboriosam numquam voluptas!</p>
+</body>
+</html>

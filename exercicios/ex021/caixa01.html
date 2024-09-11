@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de Caixas</title>
+    <style>
+        h1 { /* Elemento do tipo box-level */
+
+            background-color: lightgray;
+
+            /* height e width formam o boxsize : tamanho da caixa*/
+            height: 300px;
+            width: 300px;
+            
+            /* Essas configurações podem ser simplificada com shorthand
+            border-width: 10px;
+            border-style: solid;
+            border-color: darkslategray;
+            */
+            border: 10px solid darkslategray;
+
+            /* Simplificamos com shorthand em baixo sempre seguindo a ordem aqui top, right, bottom e left
+            padding-top: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+            Se as quatros são eguais podemos colocar so padding: 10px por exemplo 
+            Se colocarmos tipo padding: 20px 10px so dois números o nav entende o de cima e de baixo 20px ; de direira e da esquerda 10px ou seja o primeiro número para cima e baixo , o segundo número para direita e esquerda*/
+            padding: 20px 10px 15px 5px ;
+
+            /* margin tambem é a mesma coisa com padding. Só se colocarmos margin: 20px auto 20px auto ele vai centralizar margin da direita e da esquerda
+            margin-top: 20px;
+            margin-right: 20px;
+            margin-bottom: 40px;
+            margin-left: 20px;
+            */
+
+            margin: 20px 20px 40px 20px ;
+
+            /* Também configuramos seguindo essa ordem
+            outline-width: 5px;
+            outline-style: dotted;
+            outline-color: salmon;
+            */
+            outline: 5px dotted salmon;
+
+        }
+
+        a { /* Elemento do tipo inline-level*/
+            
+            border: 2px solid rgb(48, 48, 109);
+            padding: 3px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de caixa box-level</h1>
+    <p>Parágrafos também são exemplos de caixa box-level, mas os <a href="">links são exemplos decaixas inline-level</a>. Vamos ver como tudo isso funciona.</p>
+</body>
+</html>
