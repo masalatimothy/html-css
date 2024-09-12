@@ -3,22 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Fundo fixo de tela</title>
     <style>
         body {
             height: 100vh;
-            background-color: black;
+            /*background-color: black;
             background-image: url("imagens/wallpaper002.jpg");
             background-position: center center;
-            background-repeat: repeat;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+
+            Shorthand > background
+                color > image > position > repeat > [size] > attachment
+                Fazendo essa shorthand : background: black url("imagens/wallpaper002.jpg") center center no-repeat cover fixed; está dando erro o navegador não está reconhecendo o background-size então removemos background-size da shorthand e colocamos ele separado agora fica:
+                background: black url("imagens/wallpaper002.jpg") center center no-repeat fixed;  
+                background-size: cover; 
+            */
+
+            background: black url("imagens/wallpaper002.jpg") center center no-repeat fixed;
             background-size: cover;
         }
 
         main {
             background-color: white;
-            width: 450px;
+            max-width: 400px;
             padding: 10px;
-            margin: auto;
+            margin: 10px auto 30px auto;
             border: 1px solid darkblue;
             border-radius: 15px;
         }
